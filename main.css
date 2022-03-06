@@ -1,0 +1,268 @@
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+header {
+    width: 100%;
+}
+
+header .container .logo-web {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+header .container .logo-web a {
+    font-size: 50px;
+    color: #171717;
+    font-family: "Source Sans Pro";
+}
+
+nav ul {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #171717;
+    font-family: "Source sans pro";
+}
+
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    height: 250px;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    font-family: 'Source sans pro';
+    display: flex;
+    justify-content: center;
+}
+
+.hero .btn-cta {
+    padding: 10px 30px;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #6495ed;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.hero .content {
+    text-align: center;
+}
+
+
+/* Courses */
+
+.course {
+    margin: 40px auto;
+    width: 100%;
+}
+
+.course h1 {
+    font-family: 'Source sand pro';
+    font-size: 24px;
+    color: #171717;
+    margin-left: 50px;
+}
+
+.course .card-top {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.course .card-top .card-three {
+    padding: 40px 40px 40px 20px;
+    background-color: #6495ed;
+    display: inline-block;
+    color: #fff;
+}
+
+.course .card-top .card-three .card-text,
+.course .card-bot .card-two .card-text {
+    margin: 15px auto;
+}
+
+.course .card-bot {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.course .card-bot .card-two {
+    padding: 40px 40px 40px 20px;
+    background-color: #6495ed;
+    display: inline-block;
+    margin: 0px 50px;
+    color: #fff;
+}
+
+.course .card-three .diff {
+    display: flex;
+}
+
+.course .card-two .diff {
+    display: flex;
+    color: #fff;
+}
+
+.course .card-top .card-three .see-more,
+.course .card-bot .card-two .see-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.course .card-top .card-three .see-more a,
+.course .card-bot .card-two .see-more a {
+    color: #fff;
+    text-decoration: underline;
+    margin-right: 5px;
+}
+
+
+/* Footer */
+
+footer .container {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .logo-right a {
+    font-size: 30px;
+    color: #171717;
+    font-family: "Source Sans Pro";
+}
+
+footer .footer-left {
+    display: flex;
+}
+
+footer .footer-left .footer-nav {
+    margin-right: 40px;
+}
+
+footer .footer-left .footer-nav span a {
+    color: #171717;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 600;
+    font-family: 'Source sans pro';
+}
+
+footer .footer-left .footer-nav ul {
+    margin-top: 10px;
+}
+
+footer .footer-left .footer-nav ul li {
+    margin-top: 7px;
+}
+
+footer .footer-left .footer-nav ul li a {
+    color: #171717;
+    font-family: 'Source sans pro';
+    font-size: 16px;
+}
+
+footer .footer-left .footer-social ul {
+    margin-top: 10px;
+}
+
+footer .footer-left .footer-social span a {
+    color: #171717;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 600;
+    font-family: 'Source sans pro';
+}
+
+footer .footer-left .footer-social ul li {
+    margin-top: 7px;
+}
+
+footer .footer-left .footer-social ul li a {
+    color: #171717;
+    font-family: 'Source sans pro';
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
+    nav {
+        display: none;
+    }
+    header .container .logo-web {
+        margin-top: 0px;
+    }
+    header .menu {
+        width: 90%;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-mobile div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        border-radius: 4px;
+    }
+    .hero {
+        width: 100%;
+        height: 330px;
+        display: flex;
+        align-items: center;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .course .container h1 {
+        margin-left: 20px;
+    }
+    .course .card-top,
+    .course .card-bot {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+    }
+    .course .card-bot .card-two {
+        margin: 20px 0px;
+    }
+    .course .card-top .card-three {
+        margin: 20px 0px;
+        width: 100%;
+    }
+    footer .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    footer .container .logo-right {
+        text-align: center;
+    }
+    footer .footer-left {
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
